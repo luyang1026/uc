@@ -1,0 +1,103 @@
+// body{background-color: red;}
+@m-color: #ff8b00;
+.clearfix{
+	&:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+.fourlink-uc-container{
+	input{
+		-webkit-appearance:none!important;
+		-moz-appearance: textfield;
+		-webkit-outer-spin-button: none;
+		-webkit-inner-spin-button: none;
+		&:-webkit-autofill{
+		 -webkit-box-shadow: 0 0 0px 1000px white inset;
+		 -webkit-text-fill-color: #333;
+		}
+	}
+	.signup-view,.signin-view{
+		.uc-signup,.uc-signin{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: 4vw;
+			li{
+				position: relative;
+			    margin:0 3.2vw;
+			    border-bottom: solid 1px #e8e8e8;
+			    height: 13.8666667vw;
+			    line-height: 13.8666667vw;
+			    .item-label{
+			    	display: inline-block;
+			    	width: 30%;
+			    	color: #333;
+			    }
+			    .item-text{
+			    	width: 60%;
+			    	height: 90%;
+			    	border: none;
+			    	font-size: 4vw;
+			    	color: #ccc;
+			    	outline: none;
+			    }
+			    &.check-code{
+			    	.item-text{
+			    		width: 30%;
+			    	}
+			    	.send-auth-code{
+			    		box-sizing: border-box;
+			    		float: right;
+			    		padding: 0 1vw;
+			    		vertical-align: middle;
+			    		border-radius: 1vw;
+			    		background-color: #f5f5f5;
+			    		font-size: 3.5vw;
+			    	}
+			    }
+			    img{
+			    	position: absolute;
+		    	    right: 3.2vw;
+		    	    top: 4.9333333vw;
+		    	    width: 4vw;
+		    	    height: 4vw;
+			    }
+			}
+		}
+		.signup-button{
+			display: block;
+			width: 90%;
+		    background-color: @m-color;
+		    height: 10.6666667vw;
+		    color: #fff;
+		    border: 0;
+		    border-radius: 1.6vw;
+		    margin: 8vw auto 0;
+		    font-size: 3.5vw;
+		}
+		.voice-msg{
+			margin-top: 5.3333333vw;
+		    text-align: center;
+		    font-size: 3.4666667vw;
+		    color: #999;
+		    .send-voice{
+		    	color: #4dadf6;
+		    }
+		}
+		.forget-pass{
+			margin-top: 5.3333333vw;
+			color: #999;
+			font-size: 3vw;
+			text-decoration: underline;
+			text-align: center;
+		}
+		.to-signin{
+			text-align: center;
+			font-size: 3.5vw;
+			margin-top: 30%;
+			color: @m-color;
+		}
+	}
+}
